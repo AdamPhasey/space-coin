@@ -3,8 +3,9 @@
 }
 
 .logo-header {
-    height: 30vh;
-    width: 15vw;
+    height: 25vh;
+    width: 12.5vw;
+    margin-right: 5vw;
 }
 
 .header-title {

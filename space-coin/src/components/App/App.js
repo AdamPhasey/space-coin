@@ -14,7 +14,7 @@ useEffect(() => {
     setDummyData(data);
     } fetchData()
     console.log(dummyData)
-  }, []);
+  });
       
 
   if(!dummyData){

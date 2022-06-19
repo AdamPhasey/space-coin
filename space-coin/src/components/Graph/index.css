@@ -8,9 +8,27 @@
 }
 
 .p1 {
+    font-size: 2vw;
+}
+
+h2 {
     font-size: 3vw;
 }
 
-.FAQ {
-    font-size: 3vw;
+.FAQ-Box {
+  border-style: solid;
+  border-color: black;
+  border-width: 0.5vw;
+  padding-left: 10vw;
+  padding-right: 10vw;
+
 }
+
+.Data-Box {
+    border-style: solid;
+    border-color: black;
+    border-width: 0.5vw;
+    padding-left: 10vw;
+    padding-right: 10vw;
+  
+  }
