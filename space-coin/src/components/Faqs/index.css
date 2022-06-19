@@ -1,0 +1,18 @@
+.faq-answer {
+    font-size: 1.2vw;
+}
+
+.faq-question {
+    font-size: 2vw;
+}
+
+
+.FAQ-Box {
+    background-color: white;
+    border-style: solid;
+    border-color: black;
+    border-width: 0.5vw;
+    border-radius: 2vw;
+    max-width: 50vw;
+  
+  }

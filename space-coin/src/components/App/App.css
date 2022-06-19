@@ -1,8 +1,12 @@
 
-.App {
+.body {
   text-align: center;
-  height: 100vmin;
   background-color: #C0C0C0;
+  
 }
 
+body {
+  text-align: center;
+  background-color: #C0C0C0;
+}
 
