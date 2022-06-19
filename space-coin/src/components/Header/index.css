@@ -1,0 +1,21 @@
+@font-face {
+    font-family: "Marsek Demi"; src: url("//db.onlinewebfonts.com/t/acdd049d7fa81fa8c93244213c79ec66.eot");
+}
+
+.logo-header {
+    height: 30vh;
+    width: 15vw;
+}
+
+.header-title {
+font-family: "Marsek Demi";
+font-size: 5vw
+}
+
+.header1{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+}

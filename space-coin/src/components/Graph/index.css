@@ -1,0 +1,16 @@
+.flex-container1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 10vh;
+    
+}
+
+.p1 {
+    font-size: 3vw;
+}
+
+.FAQ {
+    font-size: 3vw;
+}

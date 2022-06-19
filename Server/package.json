@@ -3,15 +3,11 @@
     "express": "^4.18.1",
     "nodemon": "^2.0.16"
   },
-    "type": "module",
+  "type": "module",
 
-  "proxy": "http://localhost:3001",
-  
-    "scripts": {
-      "start": "node ./index.js",
-      "dev": "nodemon ./index.js"
-    }
+  "proxy": "http://localhost:3001/",
+  "scripts": {
+    "start": "node ./index.js",
+    "dev": "nodemon ./index.js"
   }
-  
-  
-
+}
