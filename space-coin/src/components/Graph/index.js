@@ -1,5 +1,7 @@
 import './index.css'
-function Graph ({data}) {
+
+
+function Graph ({info, data}) {
 
     return (
         <div className='flex-container1'>
@@ -7,18 +9,20 @@ function Graph ({data}) {
         <div className='Data-Box'>
           <h2 >Analytics</h2>
           <ol className='p1'>
-             <li className='p1'>Month: {data[0].Month}.  
-                 Value: {data[0].Value}</li>
-             <li classsName='p1'>Month: {data[1].Month}.  
-                 Value: {data[1].Value}</li>
+             <li className='p1'>Month: {info[0].Month} <br/>
+                 Value: {info[0].Value}</li>
+            <br/>
+             <li classsName='p1'>Month: {info[1].Month} <br/>
+                 Value: {info[1].Value}</li>
           </ol>
          
-          <p className='p1'>{data[0].Value}</p> 
         </div>
 
         <div className='FAQ-Box'>
             <h2>FAQs</h2>
-            <p className='p1'>meow</p>
+            <h3>{data[0].question}</h3>
+            <p>{data[0].answer}</p>
+
         </div> 
 
         </div>

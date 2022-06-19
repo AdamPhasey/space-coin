@@ -10,6 +10,7 @@ app.use(express.json());
 
 app.use('/', spaceCoinRouter)
 
+app.use('/', spaceCoinRouter)
 
 
 app.listen(PORT, () => {

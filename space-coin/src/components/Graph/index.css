@@ -16,17 +16,19 @@ h2 {
 }
 
 .FAQ-Box {
+  background-color: white;
   border-style: solid;
   border-color: black;
   border-width: 0.5vw;
-  padding-left: 10vw;
-  padding-right: 10vw;
+  border-radius: 2vw;
 
 }
 
 .Data-Box {
+    background-color: white;
     border-style: solid;
     border-color: black;
+    border-radius: 2vw;
     border-width: 0.5vw;
     padding-left: 10vw;
     padding-right: 10vw;
