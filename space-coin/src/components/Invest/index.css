@@ -1,0 +1,23 @@
+@font-face {
+    font-family: "Marsek Demi"; src: url("//db.onlinewebfonts.com/t/acdd049d7fa81fa8c93244213c79ec66.eot");
+}
+
+.invest {
+
+    font-family: "Marsek Demi";
+    font-size: 2vw;
+}
+
+.invest-div {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10vh;
+    border-radius: 2vw;
+
+    padding-left: 10vw;
+    padding-right: 10vw;
+    max-width: 100vw;
+}

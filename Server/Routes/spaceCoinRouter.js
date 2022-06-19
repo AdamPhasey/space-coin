@@ -1,5 +1,4 @@
 import {Router} from 'express';
-import faqData from '../libs/faqData.js';
 const spaceCoinRouter = Router();
 //import spaceCoin from '../libs/SpaceCoinDummyData.js';
 
