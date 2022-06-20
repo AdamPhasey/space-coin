@@ -18,18 +18,26 @@ function App() {
     }
     fetchData();
     console.log(faqData);
-  // eslint-disable-next-line react-hooks/exhaustive-deps
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   useEffect(() => {
+
     async function fetchData() {
       const response = await fetch("/v1/spaceCoinDummyData");
       const data = await response.json();
       setDummyData(data);
+      
     }
+    
+    fetchData()
+    const interval = setInterval(() => {
+     console.log("Every 1")
     fetchData();
     console.log(dummyData);
-  // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, 30000);
+
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   if (!dummyData) {
@@ -45,16 +53,16 @@ function App() {
       <header>
         <Header className="App-header"></Header>
       </header>
-     
 
       <div className="flex-container1">
         <Graph info={dummyData} data={faqData}></Graph>
-        <Faq data={faqData}></Faq>
       </div>
       <div>
         <Invest></Invest>
       </div>
-        
+      <div className="flex-container1">
+        <Faq data={faqData}></Faq>
+      </div>
     </div>
   );
 }

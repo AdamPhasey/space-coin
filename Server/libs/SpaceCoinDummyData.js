@@ -21,6 +21,12 @@ let spaceCoin = [
     {
         Month: 'Month 4',
         Value: 43
+    },
+
+
+    {
+        Month: 'Month 6',
+        Value: 49
     }
 ]
 
