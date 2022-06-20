@@ -1,9 +1,9 @@
 .flex-container1 {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
-    margin-top: 10vh;
+    margin-top: none;
     
 }
 
@@ -16,12 +16,9 @@ h2 {
 }
 
 .Data-Box {
-    background-color:whitesmoke;
-    border-style: solid;
-    border-color: black;
-    border-radius: 2vw;
-    border-width: 0.5vw;
+    
     padding-left: 10vw;
     padding-right: 10vw;
+    margin-bottom: 10vh;
   
   }
