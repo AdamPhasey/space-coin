@@ -1,0 +1,11 @@
+.invest-form {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border: solid;
+    background-color: whitesmoke;
+    border-radius: 1vh;
+    width: 50vw;
+    height: 30vh;
+}

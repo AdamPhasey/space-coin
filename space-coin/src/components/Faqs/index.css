@@ -1,9 +1,9 @@
 .faq-answer {
-    font-size: 1.2vw;
+    font-size: 1vw;
 }
 
 .faq-question {
-    font-size: 2vw;
+    font-size: 1.2vw;
 }
 
 
@@ -12,7 +12,29 @@
     border-style: solid;
     border-color: black;
     border-width: 0.5vw;
-    border-radius: 2vw;
-    max-width: 50vw;
+    border-radius: 0.1vw;
+    min-width: 25vw;
+    max-width: min-content;
+    min-height: 50vh;
   
+  }
+
+  .collapse-faq {
+    font-size: 1vw;
+  }
+
+
+  .my-header-class {
+    font-family: 'Marsek';
+    margin: 1vh;
+    border: none !important; 
+    font-size: 1vw;
+    color: white !important;
+    background-color: black;
+  }
+
+  .rc-collapse-content-box {
+    
+    color: black ;
+    font-size: 1vmax;
   }

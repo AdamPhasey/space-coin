@@ -1,4 +1,7 @@
 import "./index.css";
+import "rc-collapse/assets/index.css";
+import Collapse, { Panel } from "rc-collapse";
+
 
 function Faq({ data }) {
   return (
@@ -7,8 +10,11 @@ function Faq({ data }) {
 
       {data.map((item, id, id2) => (
         <div key={id}>
-          <h3 className="faq-question">{data[id].question}</h3>
-          <p className="faq-answer">{data[id].answer}</p>
+          <Collapse className="collapse-faq">
+            <Panel header={data[id].question} headerClass="my-header-class">
+              {data[id].answer}
+            </Panel>
+          </Collapse>
         </div>
       ))}
     </div>
