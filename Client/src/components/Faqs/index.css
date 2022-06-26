@@ -13,10 +13,9 @@
     border-color: black;
     border-width: 0.5vw;
     border-radius: 0.1vw;
-    min-width: 25vw;
-    max-width: min-content;
-    min-height: 50vh;
-  
+    width: 25%;
+    height: 100%;
+
   }
 
   .collapse-faq {
@@ -26,7 +25,7 @@
 
   .my-header-class {
     font-family: 'Marsek';
-    margin: 1vh;
+
     border: none !important; 
     font-size: 1vw;
     color: white !important;

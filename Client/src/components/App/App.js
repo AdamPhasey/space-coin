@@ -63,11 +63,12 @@ function App() {
       <div className="flex-container1">
         <Graph info={dummyData} data={faqData}></Graph>
       </div>
-      
+
       <div className="flex-container2">
                 <Invest Contact={Contact} buttonText="Submit"></Invest>
                 <Faq data={faqData}></Faq>
       </div>
+      <div>Hello</div>
     </div>
   );
 }
