@@ -10,9 +10,8 @@ import { useState, useEffect } from "react";
 function App() {
   const [dummyData, setDummyData] = useState("");
   const [faqData, setFaqData] = useState("");
+  const [formData, setFormData] = useState({name: "", email: "", message:""});
   //const [status, setStatus] = useState("");
-
-
 
   useEffect(() => {
     async function fetchData() {
@@ -26,23 +25,33 @@ function App() {
   }, []);
 
   useEffect(() => {
-
     async function fetchData() {
       const response = await fetch("/v1/spaceCoinDummyData");
       const data = await response.json();
       setDummyData(data);
-      
-    }
-    
-    fetchData()
-    const interval = setInterval(() => {
-     console.log("Every 1")
-    fetchData();
-    console.log(dummyData);
+    } fetchData();
+
+     const interval = setInterval(() => {
+      console.log("re-rendered due to interval");
+      fetchData();
     }, 30000);
 
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
+
+
+console.log(formData)
+function handleSubmit(e) {
+  e.preventDefault();
+  let data = {name: e.target.name.value, email: e.target.email.value, message: e.target.message.value}
+  setFormData(data)
+  console.log(formData)
+}
+
+
+
+
+
 
   if (!dummyData || !faqData) {
     return (
@@ -51,8 +60,6 @@ function App() {
       </div>
     );
   }
-
-
 
   return (
     <div className="body">
@@ -65,8 +72,8 @@ function App() {
       </div>
 
       <div className="flex-container2">
-                <Invest Contact={Contact} buttonText="Submit"></Invest>
-                <Faq data={faqData}></Faq>
+        <Invest Contact={Contact} buttonText="Submit" onSubmit={handleSubmit}></Invest>
+        <Faq data={faqData}></Faq>
       </div>
       <div>Hello</div>
     </div>

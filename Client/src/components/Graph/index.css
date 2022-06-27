@@ -11,9 +11,6 @@ h2 {
 .Data-Box {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-    margin-top: none;
     width: 90%;
-    height: 90%;
+    height: 100%;
   }

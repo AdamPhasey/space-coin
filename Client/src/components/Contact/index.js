@@ -2,10 +2,10 @@ import './index.css'
 
 
 
-function Contact ({handleSubmit, buttonText, status}) {
+function Contact ({onSubmit, buttonText, status}) {
 
 return (
-<form onSubmit={handleSubmit}>
+<form onSubmit={onSubmit}>
       <div>
         <label htmlFor="name">Name:</label>
         <input type="text" id="name" required />
