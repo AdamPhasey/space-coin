@@ -47,7 +47,7 @@ function App() {
   if (!dummyData || !faqData) {
     return (
       <div>
-        <h1>Server Failure {console.log(dummyData)}</h1>
+        <h1>Server Loading... {console.log(dummyData)}</h1>
       </div>
     );
   }

@@ -19,7 +19,7 @@ function Graph({ info }) {
     <div className="flex-container1">
       <div className="Data-Box">
         <h2>Analytics</h2>
-        <ResponsiveContainer width="100%" height="100%">
+        <ResponsiveContainer maxHeight="100%" minHeight="50%">
           <AreaChart  data={result}>
             <defs>
               <linearGradient id="color" x1="0" y1="0" x2="1" y2="1">

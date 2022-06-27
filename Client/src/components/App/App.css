@@ -1,15 +1,6 @@
 
 
 
-.body {
-  text-align: center;
-  background-color: #C0C0C0;
-  width: 100vw;
-  height: 100vh;
-
-  
-}
-
 body {
   text-align: center;
   background-color: #C0C0C0;
@@ -19,12 +10,13 @@ body {
 
 .flex-container1 {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   justify-content: space-evenly;
   width: 100vw;
   height: 50vh;
- 
+ /* outline: 3px solid limegreen !important;
+ background: rgb(0 100 0 / 0.1) !important */
 }
 
 
@@ -33,4 +25,6 @@ body {
   flex-direction: row;
   align-items: center;
   justify-content: space-evenly;
+  /* outline: 3px solid pink !important;
+  background: rgba(155, 69, 143, 0.1) !important */
 }
