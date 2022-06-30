@@ -4,13 +4,19 @@ import Graph from "../Graph/index.js";
 import Faq from "../Faqs/index.js";
 import Invest from "../Invest/index.js";
 import Contact from "../Contact";
+import Profile from "../Profile";
+
 
 import { useState, useEffect } from "react";
 
 function App() {
   const [dummyData, setDummyData] = useState("");
   const [faqData, setFaqData] = useState("");
-  const [formData, setFormData] = useState({name: "", email: "", message:""});
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
   //const [status, setStatus] = useState("");
 
   useEffect(() => {
@@ -29,9 +35,10 @@ function App() {
       const response = await fetch("/v1/spaceCoinDummyData");
       const data = await response.json();
       setDummyData(data);
-    } fetchData();
+    }
+    fetchData();
 
-     const interval = setInterval(() => {
+    const interval = setInterval(() => {
       console.log("re-rendered due to interval");
       fetchData();
     }, 30000);
@@ -39,19 +46,17 @@ function App() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
-
-console.log(formData)
-function handleSubmit(e) {
-  e.preventDefault();
-  let data = {name: e.target.name.value, email: e.target.email.value, message: e.target.message.value}
-  setFormData(data)
-  console.log(formData)
-}
-
-
-
-
-
+  console.log(formData);
+  function handleSubmit(e) {
+    e.preventDefault();
+    let data = {
+      name: e.target.name.value,
+      email: e.target.email.value,
+      message: e.target.message.value,
+    };
+    setFormData(data);
+    console.log(formData);
+  }
 
   if (!dummyData || !faqData) {
     return (
@@ -72,7 +77,11 @@ function handleSubmit(e) {
       </div>
 
       <div className="flex-container2">
-        <Invest Contact={Contact} buttonText="Submit" onSubmit={handleSubmit}></Invest>
+        <Invest
+          Contact={Contact}
+          buttonText="Submit"
+          onSubmit={handleSubmit}
+        ></Invest>
         <Faq data={faqData}></Faq>
       </div>
       <div>Hello</div>

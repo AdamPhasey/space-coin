@@ -5,7 +5,7 @@
 .logo-header {
     height: 25vh;
     width: 12.5vw;
-    margin-right: 5vw;
+    
 }
 
 .header-title {
@@ -18,7 +18,29 @@ color: white;
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     background-color: black;
 
+}
+
+
+
+.user-loggedin-profile {
+    color: white;
+    
+}
+
+.user-loggedin-profile h2 {
+    font-size: 2vh;
+}
+
+.user-loggedin-profile p {
+    font-size: 1.5vh;
+}
+
+.user-loggedin-profile img {
+    height: 30%;
+    width: 30%;
+    border-radius: 50%;
+    
 }
