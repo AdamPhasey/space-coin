@@ -3,8 +3,6 @@ import {
   ResponsiveContainer,
   Area,
   AreaChart,
-  LineChart,
-  Line,
   XAxis,
   YAxis,
   Tooltip,

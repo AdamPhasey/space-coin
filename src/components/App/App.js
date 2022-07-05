@@ -4,7 +4,6 @@ import Graph from "../Graph/index.js";
 import Faq from "../Faqs/index.js";
 import Invest from "../Invest/index.js";
 import Contact from "../Contact";
-import Profile from "../Profile";
 import { useState, useEffect } from "react";
 
 
@@ -38,8 +37,8 @@ function App() {
       setDummyData(data);
     }
     fetchData();
-
-    const interval = setInterval(() => {
+    
+    setInterval(() => {
       console.log("re-rendered due to interval");
       fetchData();
     }, 30000);
