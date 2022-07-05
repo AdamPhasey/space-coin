@@ -5,9 +5,10 @@ import Faq from "../Faqs/index.js";
 import Invest from "../Invest/index.js";
 import Contact from "../Contact";
 import Profile from "../Profile";
-
-
 import { useState, useEffect } from "react";
+
+
+const url = process.env.REACT_APP_BACKEND_URL ?? "http://localhost:3000";
 
 function App() {
   const [dummyData, setDummyData] = useState("");
@@ -21,7 +22,7 @@ function App() {
 
   useEffect(() => {
     async function fetchData() {
-      const response = await fetch("/v1/faqData");
+      const response = await fetch(`${url}/v1/faqData`);
       const data = await response.json();
       setFaqData(data);
     }
@@ -32,7 +33,7 @@ function App() {
 
   useEffect(() => {
     async function fetchData() {
-      const response = await fetch("/v1/spaceCoinDummyData");
+      const response = await fetch(`${url}/v1/spaceCoinDummyData`);
       const data = await response.json();
       setDummyData(data);
     }
